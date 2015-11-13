@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+body,div,h1,ul,li,a,dl,dt,dd {
+			padding: 0;
+			margin: 0;
+			font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei UI","Microsoft YaHei",SimHei,"宋体",simsun,sans-serif;
+		}
+		#nav {
+			width: 210px;
+			position: relative;
+			top: 50px;
+			left: 50px;
+		}
+		#nav h1 {
+			color: white;
+			background: #B1191A;
+			font-weight: normal;
+			font-size: 20px;
+			text-align: center;
+			height: 41px;
+			line-height: 41px;
+		}
+		#info {
+			float: left;
+			width: 210px;
+		}
+		#info li {
+			list-style: none;
+			height: 31px;
+			line-height: 31px;
+			background: #b61d1d;
+		}
+		#info a {
+			display: block;
+			font-size: 14px;
+			text-decoration: none;
+			color: white;
+			padding: 0 0 0 10px;
+		}
+		#info i {
+			float: right;
+			position: absolute;
+			right: 10px;
+		}
+
+		/*list*/
+		#nav .list {
+			width: 900px;
+			height: 350px;
+			background: #eee;
+			position: relative;
+			left: 210px;
+			display: none;
+		}
+		#nav .list-left-header {
+			position:absolute;
+			left: 0;
+			top: 10px;
+		}
+		#nav .list-left-header a {
+			float: left;
+			text-align: center;
+			text-decoration: none;
+			padding: 2px 6px;
+			margin: 0 0 0 10px;
+			display: block;
+			font-size: 14px;
+			color: #fff;
+			height: 25px;
+			line-height: 25px;
+			background: #666;
+		}
+		#nav .list-left-header span {
+			float: left;
+			display: inline-block;
+			width: 29px;
+			height: 29px;
+			color: #fff;
+			line-height: 29px;
+			text-align: center;
+			background: #333;
+		}
+		#nav .list-info {
+			width: 700px;
+			position: absolute;
+			top: 50px;
+			left: 0;
+		}
+		#nav .list-info dl {
+			float: left;
+		}
+		#nav .list-info dt {
+			float: left;
+			width: 80px;
+			height: 50px;
+			text-indent: 3px;
+		}
+		#nav .list-info dt i{
+			float: right;
+			position: relative;
+			right: 4px;
+		}
+		#nav .list-info a {
+			border-left: 1px solid #ccc;
+			letter-spacing: 1px;
+			padding: 0 10px;
+			font-size: 15px;
+			line-height: 1.5;
+			color: #000;
+			text-decoration: none;
+		}
+		#nav .list-right{
+			float: right;
+			width: 180px;
+		}
+		#nav .list-right li{
+			list-style: none;
+		}
+		#nav .list-right img{
+			float: right;
+			margin: 0 4px 4px 0;
+		}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选项卡</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		#div1 {
+			width: 200px;
+			margin: 0 auto;
+		}
+		#div1 ul{
+			width: 200px;
+			height: 35px;
+		}
+		#div1 li{
+			width: 50px;
+			height: 35px;
+			line-height: 35px;
+			text-align: center;
+			border: 0px;
+			background: #fff;
+			list-style: none;
+			float: left;
+			display: block;
+			border-top: 2px solid #fff;
+		}
+		#div1 .active{
+			background: #ccc;
+			border-top: 2px solid #999;
+		}
+		#div1 a {
+			text-decoration: none;
+			color: #000;
+		}
+		#div1 div{
+			margin-top: 10px;
+			width: 200px;
+			height: 200px;
+			background: #ccc;
+			display: none;
+		}
+	</style>
+	<script>
+		window.onload=function()
+		{
+			var oDiv=document.getElementById('div1');
+			var aLi=oDiv.getElementsByTagName('li');
+			var aDiv=oDiv.getElementsByTagName('div');
+
+			for (var i = 0; i < aLi.length; i++) 
+			{
+				aLi[i].onmouseover=function()
+				{
+					aLi[i].className='';
+					aDiv[i].style.display='none';
+					aLi[i].index=i;
+				};
+				this.className='active';
+				aDiv[this.index].style.display='block';
+			};
+		}
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<ul>
+			<li class="active"><a href="###">教育</a></li>
+			<li><a href="###">培训</a></li>
+			<li><a href="###">招生</a></li>
+			<li><a href="###">出国</a></li>
+		</ul>
+		<div style="display:block;">111</div>
+		<div>222</div>
+		<div>333</div>
+		<div>444</div>
+	</div>
+</body>
+</html>

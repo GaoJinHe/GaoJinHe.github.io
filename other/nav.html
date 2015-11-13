@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航栏</title>
+	<style>
+		*,li,dt,a,h2,h3{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+			color: #fff;
+		}
+		#header {
+			height: 200px;
+			min-width: 1263px;
+			background: #1889c5;
+		}
+		#header hgroup{
+			text-align: center;
+			height: 200px;
+		}
+		#header h2 {
+			color: #fff;
+			font-size: 30px;
+		}
+		#header h3{
+			color: #fff;
+			font-size: 22px;
+		}
+		#nav {
+			height: 55px;
+			min-width: 1263px;
+			background: #333;
+			position:relative;
+		}
+		#nav ul{
+			position: absolute;
+			left: 10%;
+		}
+		#nav li{
+			float: left;
+			list-style: none;
+			height: 55px;
+			line-height: 55px;
+			cursor: pointer;
+		}
+		#nav li a{
+			padding: 0 30px;
+		}
+		#nav li dd{
+			background: #333;
+			display: none;
+			text-align: center;
+		}
+		#nav li:hover dd,#nav li a:hover dd{
+			display: block;
+		}
+		#nav dt:hover,#nav dd:hover,#nav .selected{
+			background: #1889c5;
+		}
+
+	</style>
+</head>
+<body>
+	<header id="header">
+		<hgroup>
+			<h2>IT 博客专栏</h2>
+			<h3>纯Css实现导航栏效果</h3>
+		</hgroup>
+	</header>
+	<nav id="nav">
+		<ul>
+			<li>
+				<dl>
+					<dt class="selected"><a href="###">首页</a></dt>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="###">生活笔记</a></dt>
+					<dd><a href="###">日记</a></dd>
+					<dd><a href="###">感想</a></dd>
+					<dd><a href="###">装逼</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="###">技术杂谈</a></dt>
+					<dd><a href="###">Html</a></dd>
+					<dd><a href="###">Css</a></dd>
+					<dd><a href="###">Js</a></dd>
+				</dl>
+			</li>
+			<li><a href="###">然并卵</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
