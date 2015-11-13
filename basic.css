@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+body,div,ul,li,a,p,img,h1 {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei UI","Microsoft YaHei",SimHei,"宋体",simsun,sans-serif;
+}
+a {
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+
+/*header*/
+#header .nav{
+	width: 100%;
+	height: 60px;
+	background: #42474B;
+	filter: alpha(opacity:60);
+	opacity: 0.6;
+	margin-top: 15px;
+	float: left;
+	position: relative;
+}
+#header .bgsound{
+	opacity: 0;
+	filter: alpha(opacity:0);
+}
+#header .My_pic img{
+	width: 60px;
+	border: 3px solid #000;
+	border-radius: 30px;
+	position: absolute;
+    left: 100px;
+	top: 3px;
+	-webkit-box-shadow: 3px 3px 3px;
+	-moz-box-shadow: 3px 3px 3px;
+	box-shadow: 3px 3px 3px;
+}
+#header .info {
+	width: 90px;
+	height: 54px;
+	position: absolute;
+	left: 180px;
+	top: 10px;
+	font-size: 14px;
+	text-align: center;
+}
+#header .info p{
+	display: block;
+	padding: 4px;
+	margin: 2px;
+	line-height: 2;
+}
+#header nav ul{
+	float: right;
+	position: absolute;
+	top: 15px;
+	right: 100px;
+}
+#header li{
+	list-style: none;
+	float: left;
+	line-height: 60px;
+}
+#header a{
+	text-decoration: none;
+	color: #000;
+	padding: 25px;
+}
+#header a:hover,#header a.active{
+	background: #000;
+	color: #fff;
+}
+
+/*goTop*/
+#goTop {
+	width: 50px;
+	height: 50px;
+	position:fixed;
+	left: 90%;
+	top: 90%;
+	filter: alpha(opacity:30);
+	opacity: 0.3;
+	cursor: pointer;
+}
+#goTop img{
+	width: 50px;
+	height: 50px;
+}
+
+/*section*/
+section{
+	width: 100%;
+	overflow:hidden;
+}
+
+/*section-intro*/
+#intro {
+	background-color: #1889c5;
+	padding: 60px 0 88px;
+}
+#intro .section1{
+	position: relative;
+	background: red;
+	max-width: 1366px;
+	margin: 0 auto;
+}
+#intro h1{
+	position:absolute;
+	top: 200px;
+	left: 250px;
+	color: #fff;
+}
+#intro ul{
+	position:absolute;
+	top: 270px;
+	left: 220px;
+	line-height: 2;
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+#intro a{
+	color: #fff;
+}
+#intro figure{
+	float: left;
+	position: relative;
+	top: 40px;
+	left: 600px;
+}
+#intro figcaption{
+	color: #fff;
+	line-height: 1.8;
+	text-align: center;
+	text-indent: 37px;
+	letter-spacing: 1px;
+}
+#Mypic2 {
+	margin: 0 0 15px 170px;
+	width:200px;
+	border-radius:100px;
+}
+
+/*section-skill*/
+#skill {
+	min-height: 750px;
+	background: #999;
+}
+#skill h2{
+	font-size: 36px;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: 4px;
+	margin: 100px 0 0 0;
+}
+#skill p {
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: 1px;
+	margin: 10px 0;
+	line-height: 1.8;
+}
+#skill figure {
+	margin: 50px 0 0 190px;
+	padding: 20px 0;
+	float: left;
+}
+#skill img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	display: block;
+	margin: 20px auto;
+}
+#skill li{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+/*section-works*/
+#works{
+	background: #1bbc9b;
+	min-height: 700px;
+}
+#works h2{
+	font-size: 36px;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: 4px;
+	margin: 100px 0 0 0;
+}
+#works .each {
+	height: 300px;
+	width: 800px;
+	margin: 30px auto;
+}
+#works li {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	background: #42474B;
+	float: left;
+	margin: 10px;
+	opacity: 0.3;
+	filter: alpha(opacity:30);
+}
+#works a {
+	color: #fff;
+	display: block;
+	height: 110px;
+	line-height: 110px;
+	text-align: center;
+	font-size: 25px;
+}
+
+/*section-employ*/
+#employ{
+	background: #E74D3D;
+	min-height: 700px;
+}
+#employ	hgroup{
+	color: white;
+	text-align: center;
+	margin: 300px 0 0 0;
+}
+#employ h2{
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+#employ h3{
+	text-indent: -10px;
+}
+
+
